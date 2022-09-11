@@ -25,4 +25,12 @@ public class Utility {
     public static Faker faker(){
         return FAKER;
     }
+
+    public static void sleepSeconds(int seconds){
+        try {
+            Thread.sleep(1000 * seconds);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
