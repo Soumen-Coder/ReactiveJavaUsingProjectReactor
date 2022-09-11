@@ -28,7 +28,7 @@ public class Utility {
 
     public static void sleepSeconds(int seconds){
         try {
-            Thread.sleep(1000 * seconds);
+            Thread.sleep(1000L * seconds);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
